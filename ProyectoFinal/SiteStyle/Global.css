@@ -1,0 +1,146 @@
+/*Estilos globales*/
+/*Pagina principal (inicio)*/
+
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Lato';
+    color: #ff0000;
+    margin-left: 10px;
+}
+
+img{
+    max-width: 100%;
+    
+}
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+
+
+/*main*/
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+h1{
+    margin-top: 75px;
+    margin-bottom: 35px;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.20);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+.info-product button{
+    border: none;
+    background: none;
+    background-color: black;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+    
+}
+
+footer{
+    margin-top: 100px;
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+footer div{
+    margin-top: 10px;
+    font-size: 25px;
+}
+#redes{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 0.1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+    width: 600px
+}
+#LOGO{
+    width: 250px;
+}
+
+
+
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #ff0000;
+    font-weight: 300;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav > img{
+    margin-right: 200px;
+    margin-left: 20px;
+    width: 250px;
+}
+
+
+
+/*Pagina de nosotros*/
+#Nosotros{
+    font-size: 30px;
+    color: black;
+    margin-top: 40px;
+}
+#SParr{
+    margin-top: 20px;
+}
